@@ -1,3 +1,4 @@
+ console.log("operation"); 
  let value=3;
  let negvalue=-value;
  console.log("neggative value is: "+negvalue);

@@ -1,3 +1,4 @@
+console.log("conversion");
 let score =33;
 //knowing type
 console.log(typeof score);
