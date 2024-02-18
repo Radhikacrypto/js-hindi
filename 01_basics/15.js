@@ -21,3 +21,10 @@ console.log("arr 2 after flat=> "+arr2);
 
 console.log(Array.isArray("radhika"));//knowing whether such array exist
 console.log(Array.from("radhika"));//creating array from string;
+
+console.log(Array.from({name: "radhika"}))//interesting 
+//creates  an empty array as it could not translate name: radhika
+let score1 =100;
+let score2=200;
+let score3 = 300;
+console.log(Array.of)
