@@ -27,9 +27,24 @@ function sub(number1, number2) {
     let result=number1-number2;
     return result;
     //console.log("radhika ");.... yeh kaam nhi karega kyuki ek baar return kiya matlab understood hai ki definition khatam hai 
-
+    // we can also write retunr number1-number2;
 }
 result= sub(35, 23);
+//console.log(result);
+
+function loginUserMessage(username){
+    //we can give default values as well 
+
+    //function loginusername(username="radhka")
+    if(username===undefined){
+        console.log("please enter a username ");
+        return
+    }
+    retunr `${username} just logged in`
+}
+console.log(loginUserMessage("Radhika"));
+console.log("no input or value is nit passed "+ loginUserMessage());
+
 
 
 
