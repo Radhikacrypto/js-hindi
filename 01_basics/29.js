@@ -17,11 +17,15 @@ for (const greet of greetings) {
 
 const map =new Map();
 map.set('IN', "India");
-map.set('USA', "United states of Americs");
+map.set('USA', "United states of America");
 map.set('Fr', "France");
-map.set('IN', "India");// maps takes only unique value so map will ignore it 
+map.set('IN', "India");// maps takes only unique value so map will ignore it but wont throw error
 
 console.log(map);
+console.log("two ways of printing a) using just key b) using key and value both as iterator ");
+for (const key of map) {
+    console.log(key);
+}
 for (const [key, value] of map) {
     console.log(key);
 }
@@ -53,9 +57,15 @@ const programming=["js", "rb", "py", "java", "cpp"]
 
 for (const key in programming) {
     console.log(key);//output is coming so coz ...array default keys is 0, 1 , 2,...
-    console.log(programming[key]);//notice the difference 
+     
 }
-
+for (const key in programming) {
+    console.log(programming[key]);//notice the difference
+}
+for (const key in map) {
+    console.log(key);//kuch nhi print hoga ..kyuki map iterable nhi hai 
+}
+//for EACH LOOP
 const coding=["js", "ruby", "cpp", "java", "py"]
 
 coding.forEach( function (item) {
